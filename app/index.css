@@ -22,6 +22,12 @@ li {
   padding: 50px;
 }
 
+.dark {
+  color: #DADADA;
+  background: #1c2022;
+  min-height: 100%;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
@@ -238,4 +244,6 @@ li {
   font-size: 20px;
   margin: 50px 0;
 }
+
+
 

@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import Popular from './components/popular'
 import Battle from './components/battle'
-import ThemeProvider from './contexts/theme'
+import { ThemeProvider } from './contexts/theme'
+import Nav from './components/nav'
 
 class App extends React.Component {
 
@@ -23,8 +24,12 @@ class App extends React.Component {
   render() {
     return (
         <ThemeProvider value={this.state}>
-          <div className='container'>
-            <Battle />
+          <div className={this.state.theme}>
+            <div className='container'>
+              <Nav />
+
+              <Battle />
+            </div>
           </div>
         </ThemeProvider>
     )
